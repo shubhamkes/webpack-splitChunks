@@ -1,0 +1,46 @@
+{
+    "name": "frontend-business",
+    "version": "0.0.7",
+    "description": "this package contains frontend side business logic",
+    "module": "dist/index.ts",
+    "types": "index.d.ts",
+    "scripts": {
+        "test": "jest",
+        "transpile": "babel src -d dist --copy-files",
+        "build": "webpack --mode production",
+        "dev": "webpack --mode development"
+    },
+    "peerDependencies": {
+        "react": ">=16.12.0",
+        "@types/react": ">=16.9.19"
+    },
+    "author": "shubham.kesarwani@drivezy.com",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.7.5",
+        "@babel/preset-env": "^7.8.3",
+        "@types/node": "^12.12.17",
+        "@types/react": "^16.9.19",
+        "babel-loader": "^8.0.6",
+        "babel-plugin-import": "^1.13.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-react-optimize": "^1.0.1",
+        "copy-webpack-plugin": "^5.1.1",
+        "jest": "^25.1.0",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.7.3",
+        "webpack": "^4.43.0",
+        "webpack-bundle-analyzer": "^3.7.0",
+        "webpack-cli": "^3.3.11",
+        "whatwg-fetch": "^3.0.0"
+    },
+    "dependencies": {
+        "@babel/preset-typescript": "^7.8.3",
+        "@types/jest": "^25.1.0",
+        "moment": "^2.24.0"
+    }
+}
